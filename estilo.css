@@ -1,0 +1,59 @@
+/*María Fernández Gilarte*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#contenedor {
+    display: flex;
+    width: 80vw;
+    height: 80vh;
+    margin: auto; /* centra el contenedor */
+    padding: 10px;
+    gap: 15px;
+}
+
+#panelIzq{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px;
+    justify-content: flex-end;/*Al fondo*/
+    background-color: rgb(119, 122, 96);
+}
+
+#panelDerecho{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.221);
+    padding: 10px;
+    flex: 1; /*Ocupa el resto del contenedor*/
+}
+
+#ptosActual, #ptosMax , #tiempoDiv{
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 12px;
+    margin: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.desactivado{
+    background-color: #800000;
+    color: #ffffff;
+}
+
+.burbuja{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: aqua;
+    border-radius: 50%;
+}
